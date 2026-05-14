@@ -1,0 +1,13 @@
+# Sigstore Cosign Verification MCP - Auto-trigger Rules
+
+When the user asks about Sigstore, cosign, rekor, transparency log, signed releases, keyless signing, use sigstore-cosign-mcp tools:
+
+- **verify_image_signature**: Verify cosign signature on container image
+- **query_rekor_log**: Query Rekor transparency log entries
+- **verify_attestation**: Verify in-toto attestation on artifact
+- **check_keyless_identity**: Verify keyless (OIDC) signing identity
+- **list_trusted_certs**: List Fulcio trusted root certificates
+
+Install: `pip install sigstore-cosign-mcp`
+
+By MEOK AI Labs — industry governance MCP. Pairs with meok-attestation-api for signed compliance certs.

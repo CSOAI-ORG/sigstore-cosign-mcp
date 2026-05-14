@@ -1,0 +1,36 @@
+# sigstore-cosign-mcp
+# Sigstore cosign + rekor transparency log verification for signed container images + git tags + binaries.
+
+## Install
+```bash
+pip install sigstore-cosign-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label + on-premise.
+
+## Tools (5)
+
+### `verify_image_signature(query, api_key)`
+Verify cosign signature on container image
+
+### `query_rekor_log(query, api_key)`
+Query Rekor transparency log entries
+
+### `verify_attestation(query, api_key)`
+Verify in-toto attestation on artifact
+
+### `check_keyless_identity(query, api_key)`
+Verify keyless (OIDC) signing identity
+
+### `list_trusted_certs(query, api_key)`
+List Fulcio trusted root certificates
+
+## Pairs with
+- `meok-attestation-api` — HMAC signing for compliance certs
+- `meok-attestation-verify` — public verification
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT
