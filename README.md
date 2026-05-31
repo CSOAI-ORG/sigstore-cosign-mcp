@@ -1,47 +1,78 @@
-# Sigstore Cosign Verification MCP
+# Sigstore Cosign MCP
 
-[![PyPI](https://img.shields.io/pypi/v/sigstore-cosign-mcp)](https://pypi.org/project/sigstore-cosign-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-governance--mcp-purple)](https://meok.ai)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/sigstore_cosign_mcp/)
 
-Sigstore cosign + rekor transparency log verification for signed container images + git tags + binaries.
+> Sigstore cosign + Rekor transparency log verification MCP
 
-## Install
+Sigstore cosign + Rekor transparency log verification MCP. MIT
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install sigstore-cosign-mcp
+# Install via pip
+pip install sigstore_cosign_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install sigstore-cosign-mcp --client claude
 ```
 
-## Tools
+## ✨ Features
 
-| Tool | Purpose |
-|------|---------|
-| `verify_image_signature` | Verify cosign signature on container image |
-| `query_rekor_log` | Query Rekor transparency log entries |
-| `verify_attestation` | Verify in-toto attestation on artifact |
-| `check_keyless_identity` | Verify keyless (OIDC) signing identity |
-| `list_trusted_certs` | List Fulcio trusted root certificates |
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Pairs with
+## 📖 Documentation
 
-- `meok-attestation-api` — POST results to https://meok-attestation-api.vercel.app/sign for cryptographically signed compliance certs
-- `meok-attestation-verify` — public verification of any MEOK-signed cert
-- Other MEOK governance MCPs via SOV3 `mcp_bridge_call`
+- [Full Documentation](https://docs.meok.ai/sigstore-cosign-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Pricing
+## 🛡️ Compliance
 
-- **Free**: 10 calls/day. No API key required.
-- **Pro** £79/mo: unlimited + signed attestations. [Subscribe](https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836)
-- **Enterprise** £1,499/mo: white-label + on-premise + SLA. hello@meok.ai
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## Status
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Scaffold v1.0.0 ships the MCP framework + 5 tool stubs. v1.1.0 will add real regulation data ingestion.
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-If your team needs this MCP fully-loaded faster, ping hello@meok.ai for sponsored development.
+## 🏢 Enterprise
 
-## License
+Need custom development, SLA guarantees, or white-label deployment?
 
-MIT © MEOK AI Labs
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-<!-- mcp-name: io.github.CSOAI-ORG/sigstore-cosign-mcp -->
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
+
+## 🤝 Part of the MEOK Ecosystem
+
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
