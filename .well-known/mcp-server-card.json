@@ -1,0 +1,28 @@
+{
+  "name": "sigstore-cosign-mcp",
+  "title": "Sigstore Cosign Mcp",
+  "description": "Sigstore cosign + rekor transparency log verification for signed container images + git tags + binaries.",
+  "version": "1.0.3",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "verify_image_signature"
+    },
+    {
+      "name": "query_rekor_log"
+    },
+    {
+      "name": "verify_attestation"
+    },
+    {
+      "name": "check_keyless_identity"
+    },
+    {
+      "name": "list_trusted_certs"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+name: sigstore-cosign-mcp
+description: 'MCP server: sigstore-cosign-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/sigstore-cosign-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: verify_image_signature
+  description: Verify cosign signature on container image
+- name: query_rekor_log
+  description: Query Rekor transparency log entries
+- name: verify_attestation
+  description: Verify in-toto attestation on artifact
+- name: check_keyless_identity
+  description: Verify keyless (OIDC) signing identity
+- name: list_trusted_certs
+  description: List Fulcio trusted root certificates
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'

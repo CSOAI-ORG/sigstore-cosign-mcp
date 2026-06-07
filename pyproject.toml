@@ -4,7 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sigstore-cosign-mcp"
-version = "1.0.0"
+readme = "README.md"
+version = "1.0.3"
 description = "Sigstore cosign + rekor transparency log verification for signed container images + git tags + binaries."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
@@ -20,7 +21,7 @@ dependencies = ["mcp>=1.0.0"]
 
 [project.urls]
 Homepage = "https://meok.ai"
-Repository = "https://github.com/meok-ai-labs/sigstore-cosign-mcp"
+Repository = "https://github.com/CSOAI-ORG/sigstore-cosign-mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]

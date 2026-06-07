@@ -1,18 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/sigstore-cosign-mcp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Sigstore cosign + rekor transparency log verification for signed container images + git tags + b...",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/sigstore-cosign-mcp",
-    "source": "https://github.com/CSOAI-ORG/sigstore-cosign-mcp"
+    "source": "github"
   },
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "sigstore-cosign-mcp",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"
