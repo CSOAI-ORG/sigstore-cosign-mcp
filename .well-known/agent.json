@@ -1,0 +1,68 @@
+{
+  "name": "sigstore-cosign-mcp",
+  "description": "Sigstore cosign + rekor transparency log verification for signed container images + git tags + b...",
+  "url": "https://proofof.ai/scorecard/sigstore-cosign-mcp.html",
+  "version": "1.0.3",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "verify_image_signature",
+      "name": "Verify Image Signature",
+      "description": "verify_image_signature via sigstore-cosign-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "query_rekor_log",
+      "name": "Query Rekor Log",
+      "description": "query_rekor_log via sigstore-cosign-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "verify_attestation",
+      "name": "Verify Attestation",
+      "description": "verify_attestation via sigstore-cosign-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_keyless_identity",
+      "name": "Check Keyless Identity",
+      "description": "check_keyless_identity via sigstore-cosign-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_trusted_certs",
+      "name": "List Trusted Certs",
+      "description": "list_trusted_certs via sigstore-cosign-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

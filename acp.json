@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "sigstore-cosign-mcp",
+    "description": "Sigstore cosign + rekor transparency log verification for signed container images + git tags + b...",
+    "version": "1.0.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "sigstore-cosign-mcp"
+      }
+    ],
+    "capabilities": [
+      "verify_image_signature",
+      "query_rekor_log",
+      "verify_attestation",
+      "check_keyless_identity",
+      "list_trusted_certs"
+    ]
+  }
+}
