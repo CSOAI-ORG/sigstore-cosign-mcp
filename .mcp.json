@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "sigstore-cosign-mcp": {
+      "command": "uvx",
+      "args": [
+        "sigstore-cosign-mcp"
+      ]
+    }
+  }
+}
