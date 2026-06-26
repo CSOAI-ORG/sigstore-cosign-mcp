@@ -3,7 +3,7 @@ description: 'MCP server: sigstore-cosign-mcp'
 version: 1.0.5
 author: MEOK AI Labs
 homepage: https://safetyof.ai
-repository: https://github.com/MEOK-AI-Labs/sigstore-cosign-mcp
+repository: https://github.com/CSOAI-ORG/sigstore-cosign-mcp
 license: MIT
 categories:
 - compliance
